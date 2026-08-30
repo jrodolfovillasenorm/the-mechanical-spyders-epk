@@ -33,9 +33,9 @@ export interface TranslationContent {
     title: string;
   };
 
-  about: {
+  gallery: {
+    subtitle: string;
     title: string;
-    text: string;
   };
 
   bio: {
@@ -100,9 +100,9 @@ export const translations: Record<Language, TranslationContent> = {
       title: "VIDEOS",
     },
 
-    about: {
-      title: "ABOUT",
-      text: "Biography coming soon.",
+    gallery: {
+      subtitle: "VISUALS",
+      title: "IMAGE ARCHIVE",
     },
 
     bio: {
@@ -177,9 +177,9 @@ export const translations: Record<Language, TranslationContent> = {
       title: "VIDEOS",
     },
 
-    about: {
-      title: "NOSOTROS",
-      text: "Biografía próximamente.",
+    gallery: {
+      subtitle: "VISUALES",
+      title: "ARCHIVO DE IMÁGENES",
     },
 
     bio: {
@@ -254,9 +254,9 @@ export const translations: Record<Language, TranslationContent> = {
       title: "IGI-MEŠ",
     },
 
-    about: {
-      title: "E₂-GAL",
-      text: "DUB NU-GAL.",
+    gallery: {
+      subtitle: "E₂-GAL",
+      title: "DUB NU-GAL.",
     },
 
     bio: {

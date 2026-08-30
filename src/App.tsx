@@ -1,8 +1,9 @@
-import SpaceBackground from './components/layout/SpaceBackground'
-import Hero from './components/hero/Hero'
-import MusicSection from './components/music/MusicSection'
-import BioSection from './components/bio/BioSection'
-import Contact from './components/contact/Contact'
+import SpaceBackground from "./components/layout/SpaceBackground";
+import Hero from "./components/hero/Hero";
+import MusicSection from "./components/music/MusicSection";
+import BioSection from "./components/bio/BioSection";
+import GallerySection from "./components/gallery/GallerySection";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       <Hero />
       <MusicSection />
       <BioSection />
+      <GallerySection />
       <Contact />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -25,13 +25,15 @@ export default function HeroBackground() {
             {/* Floating hero panel */}
             <div
                 className="
-                    absolute inset-y-15 inset-x-8
+                    absolute
+                    inset-y-15 md:inset-y-15
+                    inset-x-3 md:inset-x-8
                     overflow-hidden
                     rounded-2xl
                     border border-white/10
                     bg-black/20
                     shadow-[0_0_40px_rgba(0,0,0,0.45)]
-                "
+                    "
             >
                 {images.map((src, i) => (
                     <img

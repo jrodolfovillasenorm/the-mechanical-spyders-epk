@@ -44,7 +44,7 @@ export default function AlbumCard({ track }: Props) {
     }
 
     return (
-        <div className="group">
+        <div className="group mb-10">
             <button
                 onClick={handleClick}
                 className="w-full text-left"

@@ -46,9 +46,11 @@ export default function BioSection() {
 
     const handleScroll = () => {
       const threshold = 40;
+      const noScroll = dossier.scrollHeight <= dossier.clientHeight + 1;
       const reachedBottom =
+        noScroll ||
         dossier.scrollTop + dossier.clientHeight >=
-        dossier.scrollHeight - threshold;
+          dossier.scrollHeight - threshold;
 
       setCanEngage(reachedBottom);
     };
@@ -63,7 +65,7 @@ export default function BioSection() {
     <section id="bio" className="relative px-6 py-28 md:px-12 lg:px-20">
       <div className="mx-auto max-w-7xl">
         {/* Section heading */}
-        <div className="mb-12 text-center"> 
+        <div className="mb-12 text-center">
           <p className="font-mono text-xs tracking-[0.45em] text-[#7CFF6B]/45">
             {content.bio.subtitle}
           </p>
@@ -78,7 +80,7 @@ export default function BioSection() {
           {/* ================================================= */}
           {/* LEFT — DOSSIER */}
           {/* ================================================= */}
-          <div className="flex h-[383px] flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-sm">
+          <div className="flex min-h-[383px] flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-sm lg:h-[383px]">
             {/* Dossier header */}
             <div className="border-b border-white/10 px-8 py-6">
               <div className="flex items-start justify-between gap-6">
@@ -222,7 +224,7 @@ export default function BioSection() {
           {/* ================================================= */}
           {/* RIGHT — VISUAL TRANSMISSION / GAME */}
           {/* ================================================= */}
-          <div className="h-[383px] overflow-hidden rounded-[2rem] border border-white/10 bg-black shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+          <div className="h-[197px] overflow-hidden rounded-[2rem] md:h-[383px] border border-white/10 bg-black shadow-[0_0_40px_rgba(0,0,0,0.5)]">
             {!engaged ? (
               <div className="relative h-full w-full">
                 {/* Slideshow */}

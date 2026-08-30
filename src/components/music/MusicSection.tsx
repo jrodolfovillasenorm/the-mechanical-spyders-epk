@@ -11,7 +11,7 @@ export default function MusicSection() {
     return (
         <section
             id="music"
-            className="relative px-6 py-32 md:px-12 lg:px-20"
+            className="relative px-6 py-32 md:px-12 lg:px-20 mb-0"
         >
             <div className="mx-auto max-w-7xl">
                 {/* =========================
@@ -27,7 +27,7 @@ export default function MusicSection() {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-2 gap-0 md:grid-cols-3 lg:grid-cols-4">
+                <div className="grid grid-cols-1 gap-0 md:grid-cols-3 lg:grid-cols-4">
                     {tracks.map((track) => (
                         <AlbumCard
                             key={track.id}
